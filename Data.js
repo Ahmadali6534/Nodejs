@@ -1,0 +1,38 @@
+const data =[
+    {
+        name:'abdullah',
+        phone:'48688686',
+        email:'admin@gmail.com'
+    },
+    {
+        name:'abdullah',
+        phone:'486',
+        email:'admin@gmail.com'
+    },
+    {
+        name:'abdullah',
+        phone:'486866666',
+        email:'admin@gmail.com'
+    },
+]
+const datatwo =[
+    {
+        name:'',
+        phone:'48688686',
+        email:'admin@gmail.com'
+    },
+    {
+        name:'abdullah',
+        phone:'486',
+        email:'admin@gmail.com'
+    },
+    {
+        name:'abdullah',
+        phone:'486866666',
+        email:'admin@gmail.com'
+    },
+]
+module.exports={
+   data:data,
+   datatwo:datatwo
+}

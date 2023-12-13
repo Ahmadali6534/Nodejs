@@ -20,13 +20,13 @@
 // console.log(app.x)
 
 
-// // moduke 
+// // moduke ===========================================
 
 // console.log('hello world')
 // fs.writeFileSync('first.js','hello')
 
 
-// // CREATE SERVER
+// // CREATE SERVER================================================
 
 // const response =(req,resp)=>{
 // resp.write('<h1>response two</h1>');
@@ -35,9 +35,9 @@
 // server.createServer(response).listen(4800);
 
 
-// ARRAY filter
+// ARRAY filter========================================
 
-const first = require('./first')
+
 
 // const array = [1,2,2,8,8,9,6,5]
 // const arr=array.filter((item)=>{
@@ -45,4 +45,30 @@ const first = require('./first')
 // })
 // console.log(arr)
 
-console.log(first.a)
+// Color package=============================
+
+// const color = require('color')
+
+
+// api creation=====================
+
+const http = require('http')
+const data= require('./Data')
+
+http.createServer((req,resp)=>{
+resp.writeHead(200,{'Content-Type':'application/json'})
+resp.write(JSON.stringify(data.data));
+resp.end();
+}).listen(4000)
+
+// 
+
+
+const array = [1,2,5,8,8,8]
+const arraytwo= array.filter((item)=>{
+   return item>2
+})
+ console.log(arraytwo)
+
+
+
