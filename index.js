@@ -75,15 +75,28 @@
 //  filecreate.writeFileSync('hello.js','hello world')
 
 
-const http = require('http')
-const data = require('./Data')
+// const http = require('http')
+// const data = require('./Data')
 
 // const fun=(req , resp)=>{
 // resp.write("<h1>Hello </h1>");
 // resp.end();
 // }
-http.createServer((req, resp)=>{
-    resp.writeHead(200, {'Content-Type':'application/json'});
-    resp.write(JSON.stringify(data.datatwo));
+// http.createServer((req, resp)=>{
+//     resp.writeHead(200, {'Content-Type':'application/json'});
+//     resp.write(JSON.stringify(data.data));
+//     resp.end();
+// }).listen(4000)
+
+
+
+
+const http = require('http')
+const Data = require('./Data')
+
+http.createServer((req,resp)=>{
+    resp.writeHead(200,{'Content-Type':'application/json'});
+    resp.write(JSON.stringify(Data.data));
     resp.end();
-}).listen(4000)
+
+}).listen(5000)
